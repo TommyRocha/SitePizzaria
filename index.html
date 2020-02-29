@@ -3,16 +3,117 @@
 
     <head>
         <!--Meta tags-->
-        <meta charset="uft-8"/>
+        <meta charset="UTF-8"/>
 
         <!--Titulo do site-->
-        <title>Hello Pizza</title>
+        <title>Oi Pizza</title>
     </head>
 
     <!--corpo do site-->
     <body>
+        <!--conteúdo introdutório do site-->
+        <header>
+            <h1>Oi Pizza!</h1>
 
-        <p>Hello Pizza!</p>
+            <!--Aqui fica o menu-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </header>
+        <section>
+            <ul>
+                <li>Qualidade</li>
+                <li>Sabor</li>
+                <li>Praticidade</li>
+                <li>Agilidade</li>
+            </ul>
+        </section>
+
+        <!--Seãsso sabores-->
+        <section>
+            <h2>Sabores</h2>
+            <p>Conheça os nossos <strong>5 sabores</strong> de <em>Pizza!</em></p>
+
+            <!--imagem-->
+            <img src="imagens/diversosSabores.png" alt="fotos de pizzas"/>
+
+            <!--Tabela de Sabores-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sabor</th>
+                        <th>Queijo e molho</th>
+                        <th>Salada</th>
+                        <th>Carne</th>
+                        <th>Azeito/Champignon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mozzarella</td>
+                        <td rowspan="6">Sim</td><!--Coloque o Rowpan no elemento que quer repetir em todas as colunas-->
+                        <td>Não</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Calabresa</td>
+                        <td>Não</td>
+                        <td>Sim</td>
+                        <td>sim</td>
+                    </tr>
+                    <tr>
+                        <td>Pepperoni</td>
+                        <td>Não</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Marguerita</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Portuguesa</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Alho</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                    </tr>    
+                </tbody>
+            </table>
+            <!--Fim da tabela de sabores-->
+
+        </section>
+
+        <!--Sessão do formulário de contato-->
+        <section>
+            <h2>Contato</h2>
+            <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST">
+                <label>Nome:</label>
+                <input type="text" name="nome"/>
+                <label>Email:</label>
+                <input type="text" name="email"/>
+                <label>Mensagem:</label>
+                <textarea name="mensagem"></textarea>
+                <input type="submit" value="Enviar"/>
+
+            </form>
+        </section>
+
+        <!--Rodapé do site-->
+        <footer>
+            <p>Oi Pizza</p>
+            <p>&copy;TommyRocha 2020</p>
+        </footer>
 
     </body>
 
